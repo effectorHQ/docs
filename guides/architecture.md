@@ -45,10 +45,12 @@ The Gateway is a WebSocket server running on `ws://127.0.0.1:18789` (configurabl
 - Webhook ingestion (receive inbound messages from channels)
 - Config synchronization (YAML/JSON from workspace)
 
-**Configuration files injected by Gateway:**
+**Configuration files injected by Gateway (Workspace-as-Kernel pattern):**
 - `AGENTS.md` — Agent definitions and capabilities
 - `SOUL.md` — Agent personality, behavior guidelines
 - `TOOLS.md` — Available tools/skills for execution
+- `IDENTITY.md` — Agent identity and branding
+- `HEARTBEAT.md` — Health check and monitoring configuration
 
 ### Pi Agent Runtime
 
@@ -261,6 +263,26 @@ openclaw plugins install @org/my-plugin
 9. **Response sent back through Gateway**
 10. **Gateway routes to channel**
 11. **Channel delivers message** to user
+
+## Lobster — Workflow Orchestration
+
+Lobster is OpenClaw's workflow orchestration engine. It chains skills into composable, deterministic pipelines.
+
+**Key traits:**
+- **Deterministic** — same inputs produce same outputs, every time
+- **Resumable** — workflows can pause and resume across sessions
+- **Token-efficient** — minimizes redundant LLM calls by caching intermediate results
+
+Workflows are defined declaratively and executed by the Lobster runtime. Think of Lobster as the "glue" that turns individual skills into multi-step automations — without requiring the agent to improvise the sequencing each time.
+
+## ACPX — Agent Client Protocol
+
+ACPX (Agent Client Protocol eXtended) provides a headless CLI for stateful ACP sessions over stdio. It uses ndjson/JSON-RPC 2.0 for structured communication.
+
+**Use cases:**
+- Headless automation (CI/CD, cron jobs)
+- Testing agent workflows without a UI
+- Programmatic agent interaction from scripts
 
 ## What's Next?
 
