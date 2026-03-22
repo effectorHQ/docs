@@ -1,6 +1,7 @@
 # Your First OpenClaw Skill in 10 Minutes
 
 Build and share your first skill in less than 10 minutes.
+Supported by [OpenClaw](https://github.com/openclaw/openclaw)
 
 ## What You'll Build
 
