@@ -149,14 +149,14 @@ Every package is ESM-only, zero-dependency (only Node.js built-ins), and works o
 npm install @effectorhq/core
 
 # Scaffold a new tool
-npx @effectorhq/create-effector my-first-tool --type skill
+npx @effectorhq/cli init my-first-tool --type skill
 cd my-first-tool
 
 # Lint → Evaluate → Validate → Compile
-npx @effectorhq/skill-lint .
+effector check .
 npx @effectorhq/skill-eval . --static-only
-npx @effectorhq/core validate .
-npx @effectorhq/core compile . -t mcp
+effector check .
+effector compile . -t mcp
 ```
 
 From zero to a Claude-ready MCP tool in under a minute.

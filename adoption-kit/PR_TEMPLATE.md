@@ -38,10 +38,10 @@ MCP tools today are untyped JSON blobs. `effector.toml` adds a thin type layer t
 npm install -g @effectorhq/core
 
 # Validate the manifest
-effector-core validate .
+effector check .
 
 # Type-check the interface
-effector-core check-types .
+effector check .
 ```
 
 ### References

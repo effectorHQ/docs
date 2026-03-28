@@ -22,7 +22,7 @@ Where to find them:
 git clone <repo-url> && cd <repo-name>
 
 # Auto-generate from the MCP server code
-npx @effectorhq/core init --from-mcp .
+effector init --from-mcp .
 
 # Review and refine the generated file
 # - Check input/output types (replace "String" / "JSON" with more specific types)
@@ -33,8 +33,8 @@ npx @effectorhq/core init --from-mcp .
 ## 3. Validate
 
 ```bash
-npx @effectorhq/core validate .
-npx @effectorhq/core check-types .
+effector check .
+effector check .
 ```
 
 ## 4. File the PR

@@ -68,7 +68,7 @@ Analyze code diffs and produce structured review reports...
 ### 3. Validate
 
 ```bash
-npx @effectorhq/skill-lint .    # Validates SKILL.md structure
+effector check .    # Validates SKILL.md structure
 npx @effectorhq/audit scan .        # Security audit
 ```
 
@@ -99,7 +99,7 @@ The type system knows that `CodeDiff` output from one skill can feed into anothe
 ## Get Started
 
 ```bash
-npx create-effector my-first-skill
+npx @effectorhq/cli init my-first-skill
 cd my-first-skill
-npx @effectorhq/skill-lint .
+effector check .
 ```

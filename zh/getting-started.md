@@ -86,13 +86,13 @@ openclaw my-first-skill greet --user "Bob"
 安装 lint 工具：
 
 ```bash
-npm install -g @effectorhq/skill-lint
+npm install -g @effectorhq/cli
 ```
 
 运行验证：
 
 ```bash
-skill-lint SKILL.md
+effector check .
 ```
 
 如果没有错误，你会看到：

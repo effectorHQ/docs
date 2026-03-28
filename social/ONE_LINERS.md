@@ -16,7 +16,7 @@ Tailored for different audiences. Pick the one that fits.
 
 ## For agent builders
 
-> Stop guessing whether two tools can compose. `effector-core check-types` tells you before runtime.
+> Stop guessing whether two tools can compose. `effector check` tells you before runtime.
 
 ## For open source maintainers
 

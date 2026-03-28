@@ -71,10 +71,10 @@ your-tool --input "example"
 
 ```bash
 # Install the linter
-npm install -g @effectorhq/skill-lint
+npm install -g @effectorhq/cli
 
 # Validate your SKILL.md
-skill-lint .
+effector check .
 
 # Run security audit
 npx @effectorhq/audit scan .

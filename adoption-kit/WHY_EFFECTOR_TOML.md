@@ -38,9 +38,9 @@ That's it. Your tool keeps running exactly as before.
 
 | Capability | How |
 |-----------|-----|
-| **Type-safe composition** | `effector-core check-types .` verifies your types exist in the 40-type catalog |
+| **Type-safe composition** | `effector check .` verifies your types exist in the 40-type catalog |
 | **Permission auditing** | `effector-audit scan .` compares declared permissions against actual code behavior |
-| **Cross-runtime compilation** | `effector-core compile . -t mcp` / `openai-agents` / `langchain` / `json` |
+| **Cross-runtime compilation** | `effector compile . -t mcp` / `openai-agents` / `langchain` / `json` |
 | **CI validation** | Add `effectorHQ/effector-action@v1` to your GitHub Actions |
 | **Visual discovery** | Your tool appears in the 40-type Spectrum with its type position |
 | **Composition graph** | See how your tool connects to others in a capability graph |
@@ -51,17 +51,17 @@ That's it. Your tool keeps running exactly as before.
 - **0 code changes**
 - **0 new dependencies**
 - **0 runtime changes**
-- **5 minutes** to set up (or 30 seconds with `effector-core init --from-mcp .`)
+- **5 minutes** to set up (or 30 seconds with `effector init --from-mcp .`)
 
 ## 30-second quickstart
 
 ```bash
 # Auto-generate from your existing MCP server
-npx @effectorhq/core init --from-mcp .
+effector init --from-mcp .
 
 # Review the generated effector.toml (check # TODO comments)
 # Then validate:
-npx @effectorhq/core validate .
+effector check .
 ```
 
 ## Learn more

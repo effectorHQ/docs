@@ -37,7 +37,7 @@ From this file, the toolchain gives you:
 - **Interactive graph** — D3 force-directed visualization of the capability graph
 - **CI validation** — GitHub Action that posts inline annotations on PRs
 
-Auto-generate from an existing MCP server: `npx @effectorhq/core init --from-mcp .`
+Auto-generate from an existing MCP server: `effector init --from-mcp .`
 
 The whole thing is 9 packages, 265+ tests, zero npm dependencies (all Node.js built-ins). Apache 2.0 licensed.
 

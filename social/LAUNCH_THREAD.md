@@ -49,7 +49,7 @@ From that one file:
 Already have an MCP server? Generate effector.toml automatically:
 
 ```bash
-npx @effectorhq/core init --from-mcp .
+effector init --from-mcp .
 ```
 
 Scans your code, detects tool definitions, infers types and permissions. Review the output, commit, done.
