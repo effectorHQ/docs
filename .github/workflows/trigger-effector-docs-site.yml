@@ -1,0 +1,23 @@
+# When canonical docs (this repo) change, rebuild the static docs site (effector-docs).
+# Requires org/repo secret EFFECTOR_DOCS_DISPATCH_TOKEN: a PAT with repo + workflow scope
+# on the effector-docs repository (fine-grained: Contents read, Actions write on that repo).
+
+name: Notify effector-docs site
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      # Add EFFECTOR_DOCS_DISPATCH_TOKEN in repo Settings → Secrets (PAT: repo + workflow on target repo).
+      # If unset, this step fails but continue-on-error keeps main-branch pushes green.
+      - name: Trigger effector-docs deploy workflow
+        continue-on-error: true
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.EFFECTOR_DOCS_DISPATCH_TOKEN }}
+          repository: Jah-yee/effector-docs
+          event-type: docs-content-updated
