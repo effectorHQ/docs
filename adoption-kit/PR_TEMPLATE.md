@@ -47,5 +47,5 @@ effector check .
 ### References
 
 - [Effector Spec](https://github.com/effectorHQ/effector-spec) — the specification
-- [effector-types](https://github.com/effectorHQ/effector-types) — 40 standard capability types
+- [effector-types](https://github.com/effectorHQ/effector-types) — 42 standard capability types
 - [Why effector.toml?](https://github.com/effectorHQ/docs/blob/main/guides/why-effector.md)

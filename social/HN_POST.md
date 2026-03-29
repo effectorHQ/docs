@@ -30,7 +30,7 @@ network = false
 
 From this file, the toolchain gives you:
 
-- **Type checking** — verify interfaces against a 40-type catalog
+- **Type checking** — verify interfaces against a 42-type catalog
 - **Composition checking** — statically verify tool chains before running them
 - **Permission auditing** — compare declared permissions against actual code behavior
 - **Cross-runtime compilation** — compile to MCP, OpenAI Agents, or LangChain from one source

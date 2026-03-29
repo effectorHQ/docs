@@ -24,7 +24,7 @@ Tailored for different audiences. Pick the one that fits.
 
 ## For investors / pitch context
 
-> effectorHQ is the type system layer for the AI agent tool ecosystem. Like TypeScript for JavaScript, but for MCP/OpenAI/LangChain tool interfaces. 40 standard types, cross-runtime compilation, zero dependencies.
+> effectorHQ is the type system layer for the AI agent tool ecosystem. Like TypeScript for JavaScript, but for MCP/OpenAI/LangChain tool interfaces. 42 standard types, cross-runtime compilation, zero dependencies.
 
 ## For technical blog posts
 

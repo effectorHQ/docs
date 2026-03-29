@@ -32,7 +32,7 @@ subprocess = false      # true if your tool spawns processes
 
 ### Choosing Types
 
-Pick from the 40 standard types in `effector-types`:
+Pick from the 42 standard types in `effector-types`:
 
 **Input types:** String, FilePath, URL, JSON, RepositoryRef, CodeDiff, CodeSnippet, IssueRef, PullRequestRef, CommitRef, TextDocument, DataTable, ImageRef, PatchSet, StructuredData
 

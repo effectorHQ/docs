@@ -55,7 +55,7 @@ Now a composition engine can answer questions before a single token is spent:
 
 All of this happens at **compile time**. No runtime surprises.
 
-## 40 standard types, derived from real data
+## 42 standard types, derived from real data
 
 We didn't invent types in a vacuum. The [effector type catalog](https://github.com/effectorHQ/effector-types) was derived from statistical analysis of those 13,729 real-world skills:
 
@@ -131,7 +131,7 @@ effectorHQ is a modular ecosystem — use what you need, ignore the rest:
 | Package | Purpose |
 |---------|---------|
 | `@effectorhq/core` | Parse, validate, type-check, compile |
-| `@effectorhq/types` | 40 standard capability types |
+| `@effectorhq/types` | 42 standard capability types |
 | `@effectorhq/skill-lint` | Lint SKILL.md structure (16 rules) |
 | `@effectorhq/skill-eval` | Quality scoring — A through F |
 | `@effectorhq/audit` | Security scanner: injection, exfiltration, drift |

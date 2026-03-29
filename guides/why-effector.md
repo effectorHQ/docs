@@ -24,7 +24,7 @@ Effector is a **typed capability layer** that sits alongside any runtime. It doe
 
 | Feature | Raw MCP | LangChain | CrewAI | Effector |
 |---------|---------|-----------|--------|----------|
-| Type safety | None | None | None | Full (40 standard types) |
+| Type safety | None | None | None | Full (42 standard types) |
 | Composition checking | Manual | Runtime only | Rigid roles | Static verification |
 | Cross-runtime | MCP only | Python only | Python only | MCP, OpenAI, LangChain, JSON IR |
 | Discovery by type | No | No | No | Yes — find by input/output type |

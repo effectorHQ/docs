@@ -38,11 +38,11 @@ That's it. Your tool keeps running exactly as before.
 
 | Capability | How |
 |-----------|-----|
-| **Type-safe composition** | `effector check .` verifies your types exist in the 40-type catalog |
+| **Type-safe composition** | `effector check .` verifies your types exist in the 42-type catalog |
 | **Permission auditing** | `effector-audit scan .` compares declared permissions against actual code behavior |
 | **Cross-runtime compilation** | `effector compile . -t mcp` / `openai-agents` / `langchain` / `json` |
 | **CI validation** | Add `effectorHQ/effector-action@v1` to your GitHub Actions |
-| **Visual discovery** | Your tool appears in the 40-type Spectrum with its type position |
+| **Visual discovery** | Your tool appears in the 42-type Spectrum with its type position |
 | **Composition graph** | See how your tool connects to others in a capability graph |
 
 ## What it costs
@@ -67,5 +67,5 @@ effector check .
 ## Learn more
 
 - [Effector Spec](https://github.com/effectorHQ/effector-spec) — the full specification
-- [Type Catalog](https://github.com/effectorHQ/effector-types) — 40 standard types
+- [Type Catalog](https://github.com/effectorHQ/effector-types) — 42 standard types
 - [Migration Guide](https://github.com/effectorHQ/docs/blob/main/guides/mcp-migration.md) — step-by-step
